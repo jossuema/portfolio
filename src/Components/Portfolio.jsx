@@ -56,10 +56,12 @@ const projectList = [
   },
 ];
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+  const {primaryColor, secondaryColor} = props;
+
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+    <section className="padding" id="portfolio" style={{backgroundColor: secondaryColor}}>
+      <h2 style={{ textAlign: "center",color: "white"}}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
@@ -72,9 +74,9 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: "40px", color: "white" }}>{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="small" style={{color: "white"}}>{project.description}</p>
             </div>
           ))}
         </div>

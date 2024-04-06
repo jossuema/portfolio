@@ -24,19 +24,19 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
+  name: "Josue Malla",
+  title: "Software Developer - IT Student",
+  email: "mmalla1@outlook.com",
+  gitHub: "jossuema",
+  instagram: "josuema_th",
+  linkedIn: "manuel-josue-malla",
   medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  twitter: "jossuema_",
+  youTube: "jossuema",
 };
 
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
+const primaryColor = "#0078d4";
+const secondaryColor = "#203a61";
 
 const App = () => {
   return (
@@ -44,7 +44,7 @@ const App = () => {
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
-      <Portfolio />
+      <Portfolio primaryColor={primaryColor} secondaryColor={secondaryColor}/>
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );

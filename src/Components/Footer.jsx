@@ -35,7 +35,7 @@ const Footer = (props) => {
     linkedIn,
     medium,
     name,
-    primaryColor,
+    secondaryColor,
     twitter,
     youTube,
   } = props;
@@ -49,7 +49,7 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        backgroundColor: secondaryColor,
         width: "100vw"
       }}
     >
@@ -105,7 +105,7 @@ const Footer = (props) => {
         )}
         {youTube && (
           <a
-            href={`https://www.youtube.com/c/${youTube}`}
+            href={`https://www.youtube.com/@${youTube}`}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -4,6 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+:root {
+  --primary: #0078d4;
+  --secondary: #203a61;
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -111,7 +116,7 @@ a:hover {
 
 .container .box {
   border-radius: 10px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid var(--primary);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -122,4 +127,21 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a; /* Color de fondo */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666; /* Color del thumb */
+  border-radius: 6px; /* Borde redondeado para el thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del thumb al pasar el ratón */
 }
