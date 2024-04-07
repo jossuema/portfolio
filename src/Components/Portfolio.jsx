@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/portfolio.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -57,11 +57,11 @@ const projectList = [
 ];
 
 const Portfolio = (props) => {
-  const {primaryColor, secondaryColor} = props;
+  const {primaryColor, secondaryColor, portfolioRef} = props;
 
   return (
-    <section className="padding" id="portfolio" style={{backgroundColor: secondaryColor}}>
-      <h2 style={{ textAlign: "center",color: "white"}}>Portfolio</h2>
+    <section className="padding" id="portfolio" style={{backgroundColor: secondaryColor}} ref={portfolioRef}>
+      <h2 style={{ textAlign: "center",color: "white"}}>Portfolio (working on it)</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img

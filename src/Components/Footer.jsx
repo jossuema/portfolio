@@ -38,11 +38,13 @@ const Footer = (props) => {
     secondaryColor,
     twitter,
     youTube,
+    contactRef,
   } = props;
 
   return (
     <div
       id="footer"
+      ref={contactRef}
       style={{
         display: "flex",
         flexDirection: "column",

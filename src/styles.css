@@ -1,7 +1,7 @@
 /**
 * CSS file to hold styles that apply across the application
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 :root {
@@ -11,7 +11,7 @@
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kode Mono", monospace;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -51,10 +51,14 @@ section img.background {
 }
 
 h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
+  font-family: "Kode Mono", monospace;
   font-weight: 400;
-  line-height: 0.8;
+  font-size: 7rem;
+  color: #0078d4;
+  text-shadow:
+    0 0 8px #0078d4,
+    0 0 10px #0078d4;
+  line-height: 1;
   margin: 0;
 }
 
@@ -129,12 +133,48 @@ img.socialIcon {
   width: 30px;
 }
 
+.navbar-item {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: font-size 0.3s ease;
+}
+
+.navbar-item i {
+  margin-right: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.contenedor-flecha {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%); /* Centra la flecha horizontalmente */
+  animation: moverFlecha 1.5s ease-in-out infinite;
+}
+
+@keyframes moverFlecha {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+.navbar-item:hover i{
+  visibility: visible;
+  opacity: 1;
+}
+
 ::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #2a2a2a; /* Color de fondo */
+  background: #2a2a2a;
 }
 
 ::-webkit-scrollbar-thumb {

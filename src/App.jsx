@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import { useRef } from "react";
 
 import "./styles.css";
 
@@ -39,13 +40,25 @@ const primaryColor = "#0078d4";
 const secondaryColor = "#203a61";
 
 const App = () => {
+  const refs = {
+    home: useRef(null),
+    about: useRef(null),
+    portfolio: useRef(null),
+    contact: useRef(null),
+  };
+
+  const scrollToRef = (ref, e) => {
+    e.preventDefault();
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };  
+
   return (
     <div id="main">
-      <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio primaryColor={primaryColor} secondaryColor={secondaryColor}/>
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Header {...refs} toRef={scrollToRef}/>
+      <Home name={siteProps.name} title={siteProps.title} homeRef={refs.home}/>
+      <About aboutRef={refs.about}/>
+      <Portfolio primaryColor={primaryColor} secondaryColor={secondaryColor} portfolioRef={refs.portfolio}/>
+      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} contactRef={refs.contact}/>
     </div>
   );
 };

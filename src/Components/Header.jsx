@@ -6,7 +6,9 @@
  */
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const { home, about, portfolio, contact, toRef } = props;
+
   return (
     <div
       style={{
@@ -21,10 +23,10 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a href="#home" onClick={(e) => toRef(home, e)} class="navbar-item"><i class="fas fa-bolt"></i> Home</a>
+      <a href="#about" onClick={(e) => toRef(about, e)}class="navbar-item"><i class="fas fa-bolt"></i> About</a>
+      <a href="#portfolio" onClick={(e) => toRef(portfolio, e)}class="navbar-item"><i class="fas fa-bolt"></i> Portfolio</a>
+      <a href="#footer" onClick={(e) => toRef(contact, e)}class="navbar-item"><i class="fas fa-bolt"></i> Contact</a>
     </div>
   );
 };
