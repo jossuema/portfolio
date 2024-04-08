@@ -42,7 +42,7 @@ const Footer = (props) => {
   } = props;
 
   return (
-    <div
+    <section
       id="footer"
       ref={contactRef}
       style={{
@@ -118,7 +118,7 @@ const Footer = (props) => {
       <p className="small" style={{ marginTop: 0, color: "white" }}>
         Created by {name}
       </p>
-    </div>
+    </section>
   );
 };
 

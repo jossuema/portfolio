@@ -141,10 +141,15 @@ img.socialIcon {
 }
 
 .navbar-item i {
-  margin-right: 8px;
+  margin-right: 5px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
+}
+
+.navbar-item:hover i{
+  visibility: visible;
+  opacity: 1;
 }
 
 .contenedor-flecha {
@@ -155,6 +160,34 @@ img.socialIcon {
   animation: moverFlecha 1.5s ease-in-out infinite;
 }
 
+.aboutDiv{
+  background-color: #203a61;
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+  border-radius: 5rem;
+  border: 5px solid #0078d4;
+}
+
+.skillsList{
+  text-align: left;
+  columns: 2;
+  font-size: 1rem;
+  margin: 1rem 3rem;
+  gap: 3rem;
+  color: white;
+}
+
+.navbar-item .rayo {
+  visibility: hidden;
+}
+
+.navbar-item.activo .rayo {
+  visibility: visible;
+}
+
+
 @keyframes moverFlecha {
   0%, 100% {
     transform: translateY(0) translateX(-50%);
@@ -162,11 +195,6 @@ img.socialIcon {
   50% {
     transform: translateY(-10px) translateX(-50%);
   }
-}
-
-.navbar-item:hover i{
-  visibility: visible;
-  opacity: 1;
 }
 
 ::-webkit-scrollbar {
@@ -185,3 +213,32 @@ img.socialIcon {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color del thumb al pasar el ratón */
 }
+
+@media (max-width: 600px) {
+  /* Tus estilos aquí */
+  .aboutDiv{
+    width: 75%;
+    padding: 2rem;
+    margin: 1rem auto;
+  }
+
+  .skillsList{
+    columns: 1;
+    margin: 1rem 1rem;
+  }
+
+  .container{
+    margin: 0;
+    grid-template-columns: 1fr;
+    padding: 0 2rem; 
+  }
+
+  .imgPortfolio{
+    display: none;
+  }
+
+  section.padding{
+    padding: 2rem 0;
+  }
+}
+

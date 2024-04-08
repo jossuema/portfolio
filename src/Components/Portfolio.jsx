@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Library System UTMACH",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "I made a system for the university library to manage the books, students, and loans. It was made with Java, MySQL, and JavaSWING.",
+    url: "https://github.com/jossuema/SystemBiblioteca-UTMACH",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Dispersion measurement web simulator",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "I made a web simulator for the dispersion measurement for my probability and statistics subject. It was made with TypeScript, React and TailwindCSS.",
+    url: "https://jossuema.github.io/MedidasDispersion-Simulador/",
   },
   {
-    title: "My Resume Site",
+    title: "AVL Tree Simulator",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created a desktop simulator for AVL trees for my data structures subject. It was made with Java and JavaSwing.",
+    url: "https://github.com/paulzamm/SimuladorArbolAVL",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "And more soon...",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "I am working on new projects, you can see them soon in my GitHub account.",
+    url: "",
   },
 ];
 
@@ -61,9 +61,9 @@ const Portfolio = (props) => {
 
   return (
     <section className="padding" id="portfolio" style={{backgroundColor: secondaryColor}} ref={portfolioRef}>
-      <h2 style={{ textAlign: "center",color: "white"}}>Portfolio (working on it)</h2>
+      <h2 style={{ textAlign: "center",color: "white"}}>Projects</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <div className="imgPortfolio" style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}

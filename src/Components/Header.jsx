@@ -23,10 +23,10 @@ const Header = (props) => {
         zIndex: 10,
       }}
     >
-      <a href="#home" onClick={(e) => toRef(home, e)} class="navbar-item"><i class="fas fa-bolt"></i> Home</a>
-      <a href="#about" onClick={(e) => toRef(about, e)}class="navbar-item"><i class="fas fa-bolt"></i> About</a>
-      <a href="#portfolio" onClick={(e) => toRef(portfolio, e)}class="navbar-item"><i class="fas fa-bolt"></i> Portfolio</a>
-      <a href="#footer" onClick={(e) => toRef(contact, e)}class="navbar-item"><i class="fas fa-bolt"></i> Contact</a>
+      <a href="#home" onClick={(e) => toRef(home, e)} className="navbar-item"><i className="fas fa-bolt"></i>Home</a>
+      <a href="#about" onClick={(e) => toRef(about, e)}className="navbar-item"><i className="fas fa-bolt"></i>About</a>
+      <a href="#portfolio" onClick={(e) => toRef(portfolio, e)}className="navbar-item"><i className="fas fa-bolt"></i>Portfolio</a>
+      <a href="#footer" onClick={(e) => toRef(contact, e)}className="navbar-item"><i className="fas fa-bolt"></i>Contact</a>
     </div>
   );
 };
