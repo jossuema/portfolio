@@ -49,16 +49,25 @@ const App = () => {
 
   const scrollToRef = (ref, e) => {
     e.preventDefault();
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  };  
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div id="main">
-      <Header {...refs} toRef={scrollToRef}/>
-      <Home name={siteProps.name} title={siteProps.title} homeRef={refs.home}/>
-      <About aboutRef={refs.about}/>
-      <Portfolio primaryColor={primaryColor} secondaryColor={secondaryColor} portfolioRef={refs.portfolio}/>
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} contactRef={refs.contact}/>
+      <Header {...refs} toRef={scrollToRef} />
+      <Home name={siteProps.name} title={siteProps.title} homeRef={refs.home} />
+      <About aboutRef={refs.about} />
+      <Portfolio
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+        portfolioRef={refs.portfolio}
+      />
+      <Footer
+        {...siteProps}
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+        contactRef={refs.contact}
+      />
     </div>
   );
 };

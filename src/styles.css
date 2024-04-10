@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 div#main {
@@ -28,6 +29,7 @@ div#main {
 section {
   position: relative;
   width: 100vw;
+  box-sizing: border-box;
 }
 
 section.min-height {
@@ -91,7 +93,7 @@ p.small {
 }
 
 hr {
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 li {
@@ -187,6 +189,32 @@ img.socialIcon {
   visibility: visible;
 }
 
+.box {
+  padding: 20px; /* Espacio alrededor del texto */
+  border: 1px solid #ccc;
+  transition: background-color 0.5s ease, background-image 0.5s ease; /* Transición suave del fondo y del gradiente */
+  background-color: #203a61; /* Color de fondo original */
+  color: #fff;
+  cursor: pointer;
+}
+
+.box span {
+  transition: transform 0.5s ease; /* Define la duración y el tipo de transición */
+  display: inline-block; /* Necesario para aplicar transformaciones */
+}
+
+.box:hover{
+  background-color: #203a61; /* Cambia el color de fondo al pasar el ratón */
+  background-image: linear-gradient(45deg, #203a61, #00b4db); /* Cambia el gradiente al pasar el ratón */
+}
+
+.box:hover span {
+  transform: translateX(10px); /* Mueve el span hacia la derecha */
+}
+
+img.socialIcon:hover{
+  filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(7486%) hue-rotate(189deg) brightness(99%) contrast(119%);
+}
 
 @keyframes moverFlecha {
   0%, 100% {
@@ -224,7 +252,7 @@ img.socialIcon {
 
   .skillsList{
     columns: 1;
-    margin: 1rem 1rem;
+    margin: 1rem 0;
   }
 
   .container{

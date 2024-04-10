@@ -9,6 +9,7 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * Desk image
@@ -50,18 +51,22 @@ const projectList = [
   },
   {
     title: "And more soon...",
-    description:
-      "I am working on new projects, you can see them soon in my GitHub account.",
+    description: "I am working on new projects, you can see them soon in my GitHub account.",
     url: "",
   },
 ];
 
 const Portfolio = (props) => {
-  const {primaryColor, secondaryColor, portfolioRef} = props;
+  const { secondaryColor, portfolioRef } = props;
 
   return (
-    <section className="padding" id="portfolio" style={{backgroundColor: secondaryColor}} ref={portfolioRef}>
-      <h2 style={{ textAlign: "center",color: "white"}}>Projects</h2>
+    <section
+      className="padding"
+      id="portfolio"
+      style={{ backgroundColor: secondaryColor }}
+      ref={portfolioRef}
+    >
+      <h2 style={{ textAlign: "center", color: "white" }}>Projects</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div className="imgPortfolio" style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
@@ -73,16 +78,33 @@ const Portfolio = (props) => {
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px", color: "white" }}>{project.title}</h3>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white", textDecoration: "none", display: "block", height: "100%" }}
+              >
+                <h3 style={{ flexBasis: "40px" }}>
+                  {project.title}
+                  <span className="flechaSpan">-&gt;</span>
+                </h3>
+                <p className="small">{project.description}</p>
               </a>
-              <p className="small" style={{color: "white"}}>{project.description}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
+};
+
+Portfolio.defaultProps = {
+  name: "",
+};
+
+Portfolio.propTypes = {
+  portfolioRef: PropTypes.object.isRequired,
+  secondaryColor: PropTypes.string.isRequired,
 };
 
 export default Portfolio;
