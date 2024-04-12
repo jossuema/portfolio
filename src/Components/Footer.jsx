@@ -55,13 +55,7 @@ const Footer = (props) => {
         width: "100vw",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "2.5rem",
-        }}
-      >
+      <div className="socials">
         {email && (
           <a href={`mailto:${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
@@ -112,6 +106,8 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
+        Copyright © 2024
+        <br />
         Created by {name}
       </p>
     </section>

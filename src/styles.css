@@ -90,6 +90,7 @@ p.large {
 
 p.small {
   font-size: 15px;
+  text-align: center;
 }
 
 hr {
@@ -189,6 +190,25 @@ img.socialIcon {
   visibility: visible;
 }
 
+.buttonDownload{
+  color: white;
+  background-color: #203a61; /* Cambia el color de fondo al pasar el ratón */
+  background-image: linear-gradient(45deg, #203a61, #00b4db);
+  padding: 1rem 1rem;
+  margin: 3rem auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #0078d4;
+  font-family: "Kode Mono", monospace;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.buttonDownload:hover{
+  background-color: #203a61; /* Cambia el color de fondo al pasar el ratón */
+  background-image: linear-gradient(45deg, #203a61, #0599bb);
+}
+
 .box {
   padding: 20px; /* Espacio alrededor del texto */
   border: 1px solid #ccc;
@@ -214,6 +234,24 @@ img.socialIcon {
 
 img.socialIcon:hover{
   filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(7486%) hue-rotate(189deg) brightness(99%) contrast(119%);
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(255,255,255,0.75);
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 @keyframes moverFlecha {
@@ -267,6 +305,28 @@ img.socialIcon:hover{
 
   section.padding{
     padding: 2rem 0;
+  }
+
+  .navbar{
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  ::-webkit-scrollbar{
+    width: 6px;
+  }
+
+  .socials{
+    flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  h1{
+    font-size: 4.5rem;
   }
 }
 

@@ -52,7 +52,7 @@ const projectList = [
   {
     title: "And more soon...",
     description: "I am working on new projects, you can see them soon in my GitHub account.",
-    url: "",
+    url: "https://github.com/jossuema",
   },
 ];
 
