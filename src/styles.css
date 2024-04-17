@@ -254,6 +254,66 @@ img.socialIcon:hover{
   gap: 2.5rem;
 }
 
+.contenedor-perfil{
+  position: absolute;
+  right: 5rem; /* Alinea el contenedor a la izquierda */
+  bottom: 5rem; /* Alinea el contenedor al fondo */
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: repeating-conic-gradient(from var(--a), #0078d4 0%, #0078d4 5%, transparent 5%, transparent 40%, #0078d4 50%);
+  animation: animate 10s linear infinite;
+}
+
+@property --a{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+.contenedor-perfil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from var(--a), white 0%, white 5%, transparent 5%, transparent 40%, white 50%);
+  animation: animate 10s linear infinite;
+  animation-delay: -3s;
+}
+
+.perfil {
+  width: 90%; /* Reduce el ancho para compensar el ancho del borde */
+  height: 90%; /* Reduce la altura para compensar el ancho del borde */
+  border-radius: 50%; /* Mantiene los bordes redondos */
+  position: absolute;
+  top: 5%; /* Posiciona el elemento centrado verticalmente */
+  left: 5%; /* Posiciona el elemento centrado horizontalmente */
+  border: 0.5rem solid #070618; /* Agrega un borde blanco de 2px de grosor */
+  box-sizing: border-box; 
+}
+
+@keyframes rotateAround {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 @keyframes moverFlecha {
   0%, 100% {
     transform: translateY(0) translateX(-50%);
@@ -327,6 +387,13 @@ img.socialIcon:hover{
 
   h1{
     font-size: 4.5rem;
+  }
+
+  .contenedor-perfil{
+    right: 2rem;
+    bottom: 7rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 

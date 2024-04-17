@@ -22,6 +22,7 @@ import cv from "../josue_cv.pdf";
  * freely use on your site.
  */
 import image from "../images/back-home.jpg";
+import perfil from "../images/perfil.jpg";
 
 const imageAltText =
   "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
@@ -30,6 +31,9 @@ const Home = ({ name, title, homeRef }) => {
   return (
     <section id="home" className="min-height" ref={homeRef}>
       <img className="background" src={image} alt="" />
+      <div className="contenedor-perfil">
+        <img src={perfil} alt="perfil" className="perfil" />
+      </div>
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
         <h1>{name}</h1>
         <h2 style={{ color: "white" }}>{title}</h2>
