@@ -21,6 +21,7 @@ import PropTypes from "prop-types";
  * freely use on your site.
  */
 import image from "../images/portfolio.jpg";
+import { Fade } from "react-awesome-reveal";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -81,22 +82,24 @@ const Portfolio = (props) => {
           />
         </div>
         <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "white", textDecoration: "none", display: "block", height: "100%" }}
-              >
-                <h3 style={{ flexBasis: "40px" }}>
-                  {project.title}
-                  <span className="flechaSpan">-&gt;</span>
-                </h3>
-                <p className="small">{project.description}</p>
-              </a>
-            </div>
-          ))}
+          <Fade cascade damping={0.1}>
+            {projectList.map((project) => (
+              <div className="box" key={project.title}>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "white", textDecoration: "none", display: "block", height: "100%" }}
+                >
+                  <h3 style={{ flexBasis: "40px" }}>
+                    {project.title}
+                    <span className="flechaSpan">-&gt;</span>
+                  </h3>
+                  <p className="small">{project.description}</p>
+                </a>
+              </div>
+            ))}
+          </Fade>
         </div>
       </div>
     </section>

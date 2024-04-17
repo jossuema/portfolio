@@ -262,7 +262,7 @@ img.socialIcon:hover{
   height: 20rem;
   border-radius: 50%;
   overflow: hidden;
-  background: repeating-conic-gradient(from var(--a), #0078d4 0%, #0078d4 5%, transparent 5%, transparent 40%, #0078d4 50%);
+  background: repeating-conic-gradient(from var(--a), #152874 0%, #152874 5%, transparent 5%, transparent 40%, #152874 50%);
   animation: animate 10s linear infinite;
 }
 
@@ -289,7 +289,7 @@ img.socialIcon:hover{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: repeating-conic-gradient(from var(--a), white 0%, white 5%, transparent 5%, transparent 40%, white 50%);
+  background: repeating-conic-gradient(from var(--a), #0a1237 0%, #0a1237 5%, transparent 5%, transparent 40%, #0a1237 50%);
   animation: animate 10s linear infinite;
   animation-delay: -3s;
 }
@@ -389,8 +389,14 @@ img.socialIcon:hover{
     font-size: 4.5rem;
   }
 
+  .buttonDownload{
+    font-size: 1rem;
+    margin: 2rem auto;
+    padding: 0.75rem;
+  }
+
   .contenedor-perfil{
-    right: 2rem;
+    right: 25%;
     bottom: 7rem;
     width: 15rem;
     height: 15rem;
