@@ -21,8 +21,8 @@ import cv from "../josue_cv.pdf";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/back-home.jpg";
-import perfil from "../images/perfil.jpg";
+import image from "../images/back-home.webp";
+import perfil from "../images/perfil.webp";
 
 const imageAltText =
   "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
