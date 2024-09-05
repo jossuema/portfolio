@@ -115,14 +115,19 @@ const skillsList = [
     img: "https://img.icons8.com/color/48/000000/azure-1.png",
   },
   {
-    name: "Arduino",
+    name: "FastAPI",
     level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/arduino.png",
+    img: "https://img.icons8.com/color/48/000000/api-settings.png",
   },
   {
-    name: "LaTeX",
+    name: "Angular",
     level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/latex.png",
+    img: "https://img.icons8.com/color/48/000000/angularjs.png",
+  },
+  {
+    name: "NextJS",
+    level: "Beginner",
+    img: "https://img.icons8.com/color/48/000000/nextjs.png",
   },
 ];
 
