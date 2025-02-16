@@ -51,6 +51,17 @@ const projectList = [
     url: "https://github.com/paulzamm/SimuladorArbolAVL",
   },
   {
+    title: "API Casa Olimpo",
+    description:
+      "I made an API for a real estate company to manage the properties, clients, and sales. It was made with FastAPI, PostgreSQL, and Docker. Using Azure for deployment.",
+    url: "https://github.com/jossuema/api-casa-olimpo",
+  },
+  {
+    title: "API SISCA",
+    description:
+      "I am developing an API for my university to manage the students, teachers, and courses. It is made with FastAPI, PostgreSQL, and Docker. Currenlty testing with Mobile App.",
+  },
+  {
     title: "And more soon...",
     description: "I am working on new projects, you can see them soon in my GitHub account.",
     url: "https://github.com/jossuema",
@@ -62,7 +73,7 @@ const Portfolio = (props) => {
 
   return (
     <section
-      className="padding"
+      className=""
       id="portfolio"
       style={{ backgroundColor: secondaryColor }}
       ref={portfolioRef}
@@ -77,7 +88,8 @@ const Portfolio = (props) => {
               width: "100%",
               objectFit: "cover",
               backgroundColor: "skyblue",
-              boxShadow: "10px 10px 20px #00b4db"}}
+              boxShadow: "10px 10px 20px #00b4db",
+            }}
             alt={imageAltText}
           />
         </div>
@@ -89,7 +101,12 @@ const Portfolio = (props) => {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "white", textDecoration: "none", display: "block", height: "100%" }}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                    display: "block",
+                    height: "100%",
+                  }}
                 >
                   <h3 style={{ flexBasis: "40px" }}>
                     {project.title}

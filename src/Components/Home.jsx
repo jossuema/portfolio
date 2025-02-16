@@ -8,7 +8,7 @@
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
-import cv from "../josue_cv.pdf";
+import cv from "../CV_ManuelJosueMalla.pdf";
 
 /**
  * Home background image
@@ -37,7 +37,7 @@ const Home = ({ name, title, homeRef }) => {
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
         <h1>{name}</h1>
         <h2 style={{ color: "white" }}>{title}</h2>
-        <a href={cv} download="josue_cv.pdf" target="_blank" rel="noopener noreferrer">
+        <a href={cv} download="CV_ManuelJosueMalla.pdf" target="_blank" rel="noopener noreferrer">
           <button className="buttonDownload" type="button">
             Download CV
           </button>

@@ -31,17 +31,17 @@ const description =
 const skillsList = [
   {
     name: "Python",
-    level: "Intermediate",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/python.png",
   },
   {
     name: "JavaScript",
-    level: "Intermediate",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/javascript.png",
   },
   {
     name: "Typescript",
-    level: "Intermediate",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/typescript.png",
   },
   {
@@ -55,9 +55,19 @@ const skillsList = [
     img: "https://img.icons8.com/color/48/000000/c-sharp-logo.png",
   },
   {
+    name: "Julia",
+    level: "Beginner",
+    img: "https://julialang.org/assets/infra/logo.svg",
+  },
+  {
     name: "React",
     level: "Intermediate",
     img: "https://img.icons8.com/color/48/000000/react-native.png",
+  },
+  {
+    name: "AngularJs",
+    level: "Intermediate",
+    img: "https://img.icons8.com/color/48/000000/angularjs.png",
   },
   {
     name: "Node.js",
@@ -73,6 +83,11 @@ const skillsList = [
     name: "TensorFlow",
     level: "Beginner",
     img: "https://img.icons8.com/color/48/000000/tensorflow.png",
+  },
+  {
+    name: "Pythorch",
+    level: "Beginner",
+    img: "https://pytorch.org/assets/images/pytorch-logo.png",
   },
   {
     name: "SQL Server",
@@ -91,12 +106,12 @@ const skillsList = [
   },
   {
     name: "PostgreSQL",
-    level: "Intermediate",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/postgreesql.png",
   },
   {
     name: "Git",
-    level: "Intermediate",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/git.png",
   },
   {
@@ -106,23 +121,18 @@ const skillsList = [
   },
   {
     name: "Docker",
-    level: "Beginner",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/docker.png",
   },
   {
     name: "Azure",
-    level: "Beginner",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/azure-1.png",
   },
   {
     name: "FastAPI",
-    level: "Beginner",
+    level: "Advanced",
     img: "https://img.icons8.com/color/48/000000/api-settings.png",
-  },
-  {
-    name: "Angular",
-    level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/angularjs.png",
   },
   {
     name: "NextJS",
@@ -143,7 +153,7 @@ const detailOrQuote =
 
 const About = ({ aboutRef }) => {
   return (
-    <section className="padding" id="about" style={{ background: "#203a61" }} ref={aboutRef}>
+    <section className="" id="about" style={{ background: "#203a61" }} ref={aboutRef}>
       <div className="aboutDiv">
         <h2 style={{ color: "white" }}>About Myself</h2>
         <p className="large" style={{ color: "white", fontSize: "1.25rem" }}>
