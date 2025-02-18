@@ -25,51 +25,8 @@ import { Fade } from "react-awesome-reveal";
 
 const imageAltText = "desktop with books and laptop";
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
-const projectList = [
-  {
-    title: "Library System UTMACH",
-    description:
-      "I made a system for the university library to manage the books, students, and loans. It was made with Java, MySQL, and JavaSWING.",
-    url: "https://github.com/jossuema/SystemBiblioteca-UTMACH",
-  },
-  {
-    title: "Dispersion measurement web simulator",
-    description:
-      "I made a web simulator for the dispersion measurement for my probability and statistics subject. It was made with TypeScript, React and TailwindCSS.",
-    url: "https://jossuema.github.io/MedidasDispersion-Simulador/",
-  },
-  {
-    title: "AVL Tree Simulator",
-    description:
-      "Created a desktop simulator for AVL trees for my data structures subject. It was made with Java and JavaSwing.",
-    url: "https://github.com/paulzamm/SimuladorArbolAVL",
-  },
-  {
-    title: "API Casa Olimpo",
-    description:
-      "I made an API for a real estate company to manage the properties, clients, and sales. It was made with FastAPI, PostgreSQL, and Docker. Using Azure for deployment.",
-    url: "https://github.com/jossuema/api-casa-olimpo",
-  },
-  {
-    title: "API SISCA",
-    description:
-      "I am developing an API for my university to manage the students, teachers, and courses. It is made with FastAPI, PostgreSQL, and Docker. Currenlty testing with Mobile App.",
-  },
-  {
-    title: "And more soon...",
-    description: "I am working on new projects, you can see them soon in my GitHub account.",
-    url: "https://github.com/jossuema",
-  },
-];
-
 const Portfolio = (props) => {
-  const { secondaryColor, portfolioRef } = props;
+  const { secondaryColor, portfolioRef, projectList } = props;
 
   return (
     <section
@@ -130,6 +87,7 @@ Portfolio.defaultProps = {
 Portfolio.propTypes = {
   portfolioRef: PropTypes.object.isRequired,
   secondaryColor: PropTypes.string.isRequired,
+  projectList: PropTypes.array.isRequired,
 };
 
 export default Portfolio;

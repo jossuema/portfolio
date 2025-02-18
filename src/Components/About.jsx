@@ -24,123 +24,6 @@ import PropTypes from "prop-types";
 const description =
   "I am a student at Universidad Tecnica de Machala in Ecuador. I love building technology and digital solutions focused on real-world problems";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-const skillsList = [
-  {
-    name: "Python",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/python.png",
-  },
-  {
-    name: "JavaScript",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/javascript.png",
-  },
-  {
-    name: "Typescript",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/typescript.png",
-  },
-  {
-    name: "Java",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png",
-  },
-  {
-    name: "C#",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/c-sharp-logo.png",
-  },
-  {
-    name: "Julia",
-    level: "Beginner",
-    img: "https://julialang.org/assets/infra/logo.svg",
-  },
-  {
-    name: "React",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/react-native.png",
-  },
-  {
-    name: "AngularJs",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/angularjs.png",
-  },
-  {
-    name: "Node.js",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/nodejs.png",
-  },
-  {
-    name: "Express.js",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/express.png",
-  },
-  {
-    name: "TensorFlow",
-    level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/tensorflow.png",
-  },
-  {
-    name: "Pythorch",
-    level: "Beginner",
-    img: "https://pytorch.org/assets/images/pytorch-logo.png",
-  },
-  {
-    name: "SQL Server",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/sql.png",
-  },
-  {
-    name: "MySQL",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/mysql-logo.png",
-  },
-  {
-    name: "MongoDB",
-    level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/mongodb.png",
-  },
-  {
-    name: "PostgreSQL",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/postgreesql.png",
-  },
-  {
-    name: "Git",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/git.png",
-  },
-  {
-    name: "Linux",
-    level: "Intermediate",
-    img: "https://img.icons8.com/color/48/000000/linux.png",
-  },
-  {
-    name: "Docker",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/docker.png",
-  },
-  {
-    name: "Azure",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/azure-1.png",
-  },
-  {
-    name: "FastAPI",
-    level: "Advanced",
-    img: "https://img.icons8.com/color/48/000000/api-settings.png",
-  },
-  {
-    name: "NextJS",
-    level: "Beginner",
-    img: "https://img.icons8.com/color/48/000000/nextjs.png",
-  },
-];
-
 const skillDescription = "Here are some of the skills I have learned and used in my projects:";
 
 /**
@@ -151,7 +34,7 @@ const skillDescription = "Here are some of the skills I have learned and used in
 const detailOrQuote =
   "I am passionate about some areas of current technology as software development, data science and electronics";
 
-const About = ({ aboutRef }) => {
+const About = ({ aboutRef, skillsList }) => {
   return (
     <section className="" id="about" style={{ background: "#203a61" }} ref={aboutRef}>
       <div className="aboutDiv">
@@ -186,6 +69,7 @@ About.defaultProps = {
 
 About.propTypes = {
   aboutRef: PropTypes.object.isRequired,
+  skillsList: PropTypes.array.isRequired,
 };
 
 export default About;
