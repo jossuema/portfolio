@@ -63,6 +63,11 @@ const skillsList = [
     img: "https://img.icons8.com/color/48/000000/c-sharp-logo.png",
   },
   {
+    name: "C",
+    level: "Intermediate",
+    img: "https://img.icons8.com/color/48/000000/c-programming.png",
+  },
+  {
     name: "Julia",
     level: "Beginner",
     img: "https://julialang.org/assets/infra/logo.svg",
@@ -146,6 +151,21 @@ const skillsList = [
     name: "NextJS",
     level: "Beginner",
     img: "https://img.icons8.com/color/48/000000/nextjs.png",
+  },
+  {
+    name: "TailwindCSS",
+    level: "Intermediate",
+    img: "https://img.icons8.com/color/48/000000/tailwindcss.png",
+  },
+  {
+    name: "Kotlin",
+    level: "Beginner",
+    img: "https://img.icons8.com/color/48/000000/kotlin.png",
+  },
+  {
+    name: "Oracle Linux",
+    level: "Intermediate",
+    img: "https://img.icons8.com/plasticine/100/oracle-linux.png",
   },
 ];
 
