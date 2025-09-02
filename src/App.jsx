@@ -167,6 +167,11 @@ const skillsList = [
     level: "Intermediate",
     img: "https://img.icons8.com/plasticine/100/oracle-linux.png",
   },
+  {
+    name: "Power BI",
+    level: "Intermediate",
+    img: "https://img.icons8.com/color/48/000000/power-bi.png",
+  },
 ];
 
 const projectList = [
